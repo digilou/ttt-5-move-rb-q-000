@@ -11,11 +11,6 @@ describe './lib/move.rb' do
       expect{move}.to raise_error(ArgumentError)
     end
 
-    it 'provides a default value for the 3rd argument' do
-      board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-      expect {move(board, 2)}.to_not raise_error
-    end
-
     it 'allows "X" player in the top left position' do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
       move(board, 0, "X")
