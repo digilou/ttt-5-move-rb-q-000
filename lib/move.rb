@@ -12,7 +12,6 @@ def input_to_index(input)
 end
 
 def move(array, index, value)
-  array = board
   index = input_to_index
   array[input] = value
   array
