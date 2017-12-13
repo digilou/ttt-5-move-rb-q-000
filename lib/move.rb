@@ -7,12 +7,17 @@ def display_board(board)
 end
 
 # code your input_to_index and move method here!
-def input_to_index(input)
-  input.to_i - 1
-end
-
-def move(array, index, value="X")
-  index = input_to_index
-  array[index] = value
-  array
+# def input_to_index(input)
+#   input.to_i - 1
+# end
+# 
+# def move(array, index, value="X")
+#   index = input_to_index
+#   array[index] = value
+#   array
+# end
+def move(board, index, type="X")
+  arr = board
+  arr[index.to_i-1] = type
+  arr
 end
