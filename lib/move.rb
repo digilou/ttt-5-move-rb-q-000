@@ -13,6 +13,6 @@ end
 
 def move(array, index, value)
   index = input_to_index
-  array[input] = value
+  array[index] = value
   array
 end
